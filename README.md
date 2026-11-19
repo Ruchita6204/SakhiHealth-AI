@@ -1,117 +1,163 @@
 # SakhiHealth AI
 
-SakhiHealth AI is a learning/demo full-stack application for women's health education and private wellness journaling. It combines a FastAPI backend, a browser-based frontend, SQLite persistence, and a retrieval system over a curated health knowledge library.
+SakhiHealth AI is a learning and demonstration full-stack application designed to support women's health education and private wellness journaling. It combines a FastAPI backend, a browser-based frontend, SQLite database storage, and a hybrid information retrieval system using a curated women's health knowledge library.
 
 ## Features
 
 - User registration and login
 - Password hashing and signed bearer-token authentication
-- User-scoped wellness journal entries, with deletion
+- User-specific wellness journal entries with deletion functionality
 - Mood and symptom summaries
-- Women's health knowledge library with source links
-- Hybrid document retrieval using TF-IDF and Sentence Transformers semantic similarity
+- Women's health knowledge library with source references
+- Hybrid document retrieval using TF-IDF and Sentence Transformer semantic similarity
 - Synonym expansion and intent-aware topic boosting
 - Source references and low-confidence abstention in the assistant workflow
 - Basic urgent-symptom routing message
 - API health endpoint and interactive Swagger documentation
 
-## Technology
+## Technology Stack
 
-- **Backend:** Python, FastAPI
-- **Frontend:** HTML, CSS, JavaScript
-- **Storage:** SQLite
-- **Retrieval:** scikit-learn TF-IDF, Sentence Transformers (`all-MiniLM-L6-v2`)
-- **Testing:** pytest, httpx
+| Component | Technology |
+|---|---|
+| Backend | Python, FastAPI |
+| Frontend | HTML, CSS, JavaScript |
+| Database | SQLite |
+| Keyword Retrieval | TF-IDF, scikit-learn |
+| Semantic Retrieval | Sentence Transformers |
+| Semantic Model | all-MiniLM-L6-v2 |
+| Testing | pytest, httpx |
 
-## Run on Windows
+## Installation and Setup (Windows)
 
-1. Extract this ZIP.
-2. Open the `SakhiHealth-AI` folder in VS Code.
-3. Open a terminal in the project root (the folder containing `requirements.txt`).
-4. Create and activate a virtual environment:
+### Step 1: Extract the project
 
-   ```cmd
-   python -m venv .venv
-   .venv\Scripts\activate
-   ```
+Extract the ZIP file and open the `SakhiHealth-AI` folder in Visual Studio Code.
 
-5. Install dependencies:
+### Step 2: Open the terminal
 
-   ```cmd
-   python -m pip install -r requirements.txt
-   ```
+Open the VS Code terminal in the project root directory (the folder containing `requirements.txt`).
 
-6. Set a unique development secret for the current terminal session:
+### Step 3: Create a virtual environment
 
-   ```cmd
-   set SAKHI_SECRET=replace-this-with-a-long-random-secret
-   ```
+```cmd
+python -m venv .venv
+```
 
-7. Start the backend:
+### Step 4: Activate the virtual environment
 
-   ```cmd
-   python -m uvicorn backend.app.main:app --reload
-   ```
+```cmd
+.venv\Scripts\activate
+```
 
-8. Open the application at http://127.0.0.1:8000
+### Step 5: Install dependencies
 
-API documentation: http://127.0.0.1:8000/docs
+```cmd
+python -m pip install -r requirements.txt
+```
 
-You can also run `run_windows.bat` from the project folder. For a custom secret, set `SAKHI_SECRET` in the terminal before launching the batch file.
+### Step 6: Configure the application secret
 
-## Tests
+Set a unique secret for your development session:
 
-From the project root, run:
+```cmd
+set SAKHI_SECRET=replace-this-with-a-long-random-secret
+```
+
+Use a secure random value instead of the example above. Do not publish your actual secret.
+
+### Step 7: Start the backend server
+
+```cmd
+python -m uvicorn backend.app.main:app --reload
+```
+
+### Step 8: Open the application
+
+- Application: http://127.0.0.1:8000
+- API documentation: http://127.0.0.1:8000/docs
+- API health check: http://127.0.0.1:8000/api/health
+
+You can also use `run_windows.bat` from the project folder to start the application. Set `SAKHI_SECRET` in the terminal before running the batch file.
+
+## Testing
+
+Run the API tests from the project root:
 
 ```cmd
 python -m pytest tests/test_api.py -v
 ```
 
-Retrieval evaluation scripts:
+### Retrieval Evaluation
+
+The project includes the following retrieval evaluation scripts:
 
 ```cmd
 python tests\evaluate_retrieval.py
+```
+
+```cmd
 python tests\test_topic_boost_weights.py
+```
+
+```cmd
 python tests\analyze_rankings.py
 ```
 
-The retrieval experiments use a small manually labelled evaluation set and should be treated as preliminary results, not proof of general performance or medical accuracy.
+These scripts evaluate document retrieval performance, topic-boost configurations, and per-query ranking behaviour.
 
-## Project structure
+The retrieval experiments use a small manually labelled evaluation dataset. Their results are preliminary and should not be interpreted as proof of general performance or medical accuracy.
+
+## Project Structure
 
 ```text
 SakhiHealth-AI/
+│
 ├── backend/
+│   ├── __init__.py
 │   └── app/
+│       ├── __init__.py
 │       └── main.py
+│
 ├── data/
 │   └── health_knowledge.json
+│
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
 │   └── app.js
+│
 ├── tests/
 │   ├── analyze_rankings.py
 │   ├── evaluate_retrieval.py
 │   ├── test_api.py
 │   └── test_topic_boost_weights.py
+│
 ├── .env.example
 ├── .gitignore
+├── README.md
 ├── requirements.txt
-├── run_windows.bat
-└── README.md
+└── run_windows.bat
 ```
 
-## Data, privacy and safety
+## Data, Privacy and Safety
 
-- The SQLite database is created automatically when the application starts. It is intentionally not included in this GitHub package.
-- Do not commit real `.env` files, secrets, personal journal data, or local database files.
-- The `.env.example` file is a reference template; the current application reads configuration from environment variables. Set `SAKHI_SECRET` in the terminal or deployment environment.
-- This is a student/learning demonstration, not a clinically validated medical product. It does not diagnose conditions, prescribe treatment, or replace professional medical care.
-- The urgent-keyword check is basic and is not a reliable emergency detector.
-- Retrieval similarity scores are not probabilities, medical confidence scores, or proof that an answer is correct.
-- Before any public deployment, review authentication, CORS settings, secret management, privacy, data retention/deletion, HTTPS, rate limiting, and clinical content with appropriate experts.
+- The SQLite database is created automatically when the application starts. It is intentionally excluded from this GitHub package.
+- Do not commit actual `.env` files, passwords, API keys, authentication secrets, personal journal data, or local database files.
+- The `.env.example` file provides a reference configuration. The application reads configuration from environment variables. Set `SAKHI_SECRET` in your terminal or deployment environment.
+- SakhiHealth AI is a student learning and demonstration project, not a clinically validated medical product.
+- The application does not diagnose medical conditions, prescribe treatments, or replace professional medical advice.
+- The urgent-keyword check is basic and must not be treated as a reliable emergency detection or medical triage system.
+- Retrieval similarity scores are not probabilities, medical confidence scores, or proof of answer correctness.
+- Before public deployment, review authentication, CORS settings, secret management, privacy, data retention and deletion, HTTPS, rate limiting, and clinical content with appropriate experts.
 
-## Knowledge sources
+## Knowledge Sources
 
-The knowledge library is stored in `data/health_knowledge.json`. Check the source links and content before relying on or publishing health information.
+The women's health knowledge library is maintained in:
+
+`data/health_knowledge.json`
+
+It contains curated educational information and source references. Review the original sources and verify the content before relying on or publishing health information.
+
+## Project Purpose
+
+SakhiHealth AI demonstrates how information retrieval, web technologies, and structured health knowledge can be combined to build an accessible women's health education and wellness journaling platform.
