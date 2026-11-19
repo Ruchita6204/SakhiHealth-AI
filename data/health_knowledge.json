@@ -1,0 +1,107 @@
+
+[
+  {
+    "id": "WH01",
+    "topic": "Menstrual health basics periods menstrual cycle",
+    "title": "WHO: Menstrual health",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/menstrual-health",
+    "content": "Menstrual health includes accurate age-appropriate information, suitable menstrual materials, water sanitation and hygiene facilities, timely diagnosis and care for menstrual difficulties, and freedom from stigma. Menstrual experiences and menstrual cycle patterns vary between individuals."
+  },
+  {
+    "id": "WH02",
+    "topic": "When to seek care irregular periods heavy bleeding",
+    "title": "WHO: When to seek menstrual health care",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/menstrual-health",
+    "content": "Unpredictable, infrequent, very painful, heavy or prolonged menstrual bleeding, or symptoms that disrupt daily activities, deserve evaluation by a qualified health professional. Irregular periods can have several possible causes. Seek medical assessment rather than assuming a particular condition."
+  },
+  {
+    "id": "WH03",
+    "topic": "Period pain cramps menstrual symptoms",
+    "title": "WHO: Menstrual health and pain",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/menstrual-health",
+    "content": "Menstrual symptoms may include cramps, abdominal pain, bloating, headaches and mood changes. Severe pain, pain outside menstrual bleeding, or symptoms that interfere with school, work or daily life should be discussed with a healthcare professional. Period pain should not automatically be dismissed as normal."
+  },
+  {
+    "id": "WH04",
+    "topic": "PCOD PCOS polycystic ovary syndrome hormonal imbalance irregular periods acne",
+    "title": "WHO: PCOS and PCOD awareness",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "content": "PCOD is a term people commonly use when searching for polycystic ovary disease. This educational resource covers the clinically described condition PCOS, or polycystic ovary syndrome. PCOS is a common hormonal and metabolic condition associated with higher than normal androgen levels and changes in ovulation. Possible symptoms include irregular or infrequent periods, absent periods, acne, oily skin, excessive facial or body hair, scalp hair thinning and difficulty becoming pregnant. Symptoms differ between individuals. PCOS is not diagnosed from one symptom or from an online questionnaire."
+  },
+  {
+    "id": "WH05",
+    "topic": "PCOS diagnosis tests symptoms treatment management PCOD",
+    "title": "WHO: Understanding PCOS diagnosis and care",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "content": "PCOS diagnosis is made by qualified healthcare professionals after considering other possible causes. WHO describes three diagnostic features: signs or blood-test evidence of higher androgen levels, irregular or absent menstrual periods, and polycystic ovaries on ultrasound. At least two features are generally required after other causes have been excluded. Not everyone with PCOS has visible ovarian cysts. Treatment and management may include lifestyle support, medicines or fertility care depending on individual needs. There is currently no cure, but symptoms and long-term health risks can be managed. Do not self-diagnose PCOS or start medication without medical advice."
+  },
+  {
+    "id": "WH06",
+    "topic": "Endometriosis pelvic pain painful periods heavy bleeding",
+    "title": "WHO: Endometriosis awareness",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/endometriosis",
+    "content": "Endometriosis is a chronic condition in which tissue similar to the lining of the uterus grows outside the uterus. Possible symptoms include severe menstrual pain, heavy bleeding, persistent pelvic pain, bloating, nausea and difficulty becoming pregnant. Symptoms vary and some people may have no symptoms. Diagnosis and treatment require healthcare assessment. Persistent or severe pelvic pain should not be ignored."
+  },
+  {
+    "id": "WH07",
+    "topic": "Thyroid hypothyroidism irregular periods heavy menstruation fatigue",
+    "title": "NHS: Underactive thyroid",
+    "source": "National Health Service",
+    "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+    "content": "Hypothyroidism means the thyroid gland does not produce enough thyroid hormones. Possible symptoms include tiredness, feeling cold, weight gain, constipation, difficulty concentrating, low mood, dry skin, hair loss and irregular or heavy menstrual periods. These symptoms can have other causes. A healthcare professional can assess symptoms and use blood tests such as TSH and T4 when appropriate. Do not start or change thyroid medication without medical advice."
+  },
+  {
+    "id": "WH08",
+    "topic": "Healthy diet nutrition balanced food hormonal health",
+    "title": "WHO: Healthy diet",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+    "content": "A healthy diet is based on adequacy, balance, moderation and diversity. A varied diet can include vegetables, fruits, pulses, whole grains, nuts and suitable protein sources. Dietary needs vary according to age, health, activity, culture and individual circumstances. No single food or diet can cure PCOS, thyroid disease or menstrual disorders. Seek individualized nutrition advice when managing a health condition."
+  },
+  {
+    "id": "WH09",
+    "topic": "Mental wellbeing stress anxiety mood changes emotional health",
+    "title": "WHO: Women's health and wellbeing",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/health-topics/women-s-health",
+    "content": "Women's health includes both physical and mental wellbeing throughout life. Some people experience mood changes around menstruation. Persistent anxiety, sadness, emotional distress or problems affecting daily functioning deserve support from an appropriate healthcare professional. Seeking emotional support is a positive step and should not be stigmatized."
+  },
+  {
+    "id": "WH10",
+    "topic": "Menstrual hygiene period hygiene sanitation pads",
+    "title": "WHO: Menstrual health and hygiene",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/menstrual-health",
+    "content": "Menstrual health requires access to appropriate menstrual materials, clean water, sanitation and hygiene facilities, and accurate information. Menstruation is a normal biological process and should not be associated with shame or discrimination. People should have access to safe and suitable menstrual products and respectful support."
+  },
+  {
+    "id": "WH11",
+    "topic": "Menopause perimenopause life course women's health",
+    "title": "WHO: Women's health across life stages",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/health-topics/women-s-health",
+    "content": "Women's health needs change across different stages of life, including adolescence, reproductive years, perimenopause and menopause. Menopause is a natural life stage. Individual experiences and symptoms vary, and people experiencing disruptive symptoms can discuss them with a qualified healthcare professional."
+  },
+  {
+    "id": "WH12",
+    "topic": "Privacy respectful healthcare medical consultation",
+    "title": "WHO: Women's health",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/health-topics/women-s-health",
+    "content": "Women's health information and healthcare should respect dignity, privacy, equality and informed decision-making. People should be able to discuss menstrual and reproductive health concerns without stigma. Educational information supports awareness but cannot replace personal medical assessment, diagnosis or treatment."
+  },
+  {
+    "id": "WH13",
+    "topic": "PCOS lifestyle physical activity exercise wellbeing PCOD",
+    "title": "WHO: PCOS management and long-term health",
+    "source": "World Health Organization",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "content": "PCOS is associated with metabolic health concerns, including insulin resistance and increased risk of type 2 diabetes. Healthy eating and regular physical activity are important for general health in people with PCOS, even when they do not lead to weight loss. Individual management should be discussed with a healthcare professional. Lifestyle changes are not a guaranteed cure for PCOS."
+  }
+]
